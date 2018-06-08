@@ -3,9 +3,10 @@
 version: 1
 cli:
   server: https://app.fossa.io
+  project: fossa-poc-test
   fetcher: custom
 analyze:
   modules:
-  - name: fossa-poc
+  - name: fossa-poc-test
     path: Gemfile
     type: ruby
