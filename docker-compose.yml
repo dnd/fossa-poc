@@ -1,0 +1,15 @@
+version: '3.6'
+
+services:
+  web:
+    build: .
+    command: irb
+    env_file:
+      - '.env'
+    volumes:
+      - "bundle_cache:/bundle"
+      - "./:/app"
+    working_dir: /app
+
+volumes:
+  bundle_cache:
